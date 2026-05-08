@@ -19,127 +19,11 @@
     --hover-blue: #040d91;
   }
 
-/* welcome popup */
-
-.welcome-dragbar {
-  background-color: var(--hover-blue);
-  color: white;
-  height: 26px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.welcome-dragbar-left{
-  font-size: 18px;
-  padding-left: 5px;
-  display: flex;
-}
-
-.welcome-dragbar-left img{
-  height: 24px;
-  width: auto;
-  padding: 5px 4px 0px 0px;
-}
-
-.welcome-dragbar span{
-  padding-top: 2px;
-}
-
-.close-btn:focus {
-  outline: none;
-}
-
-.welcome-close-btn {
-  margin-right: 3px;
-  color: black;
-  font-size: 22px;
-}
-
-.welcome-logo {
-  display: flex;
-  margin-top: 12px;
-  margin-left: 12px;
-  font-family: 'Times New Roman';
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.welcome-middle-content {
-  margin: 0px 12px 0px 12px;
-  display: flex;
-}
-
-.welcome-middle-info {
-  background-color: #ffffdf;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  border-bottom: 1px solid white;
-  border-right: 1px solid white;
-  width: 75%;
-  min-height: 175px;
-  max-height: 175px;
-  padding-top: 5px;
-  padding-left: 8px;
-  display: flex;
-  flex-direction: column;
-}
-
-.wmi-top {
-  display: flex;
-  padding: 5px;
-  margin-top: 5px;
-  gap: 5px;
-  font-family: 'Win95Bold';
-  font-size: 15px;
-}
-
-.wmi-top img{
-  height: 24px;
-}
-
-.wmi-bottom{
-  margin-left: 8px;
-  margin-top: 14px;
-}
-
-.welcome-middle-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 15px 0px 0px 22px;
-}
-
-.welcome-btn {
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-  border-bottom: 1px solid gray;
-  border-right: 1px solid gray;
-  box-shadow: 1px 1px 0px 0px black; 
-  white-space: nowrap;
-  padding: 2px 18px 0px 18px;
-}
-
-.welcome-btn-active {
-  box-shadow: inset -1px -1px 0px white, inset 3px 3px 0px black;
-}
-
-.welcome-logo img{
-  width: auto;
-  height: 32.5px;
-}
-
-.welcome-bottom-content {
-  margin-left: 15px;
-  margin-top: 8px;
-}
-
 /* desktop item window topbars */
 
 .dragbar{
-  height: 26px;
-  width: 546px;
+  height: 24px;
+  width: 496px;
   max-width: 100%;
   color: white;
   background-color: var(--hover-blue);
@@ -152,12 +36,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .dragbar-icon{
-  height: 18px;
-  width: auto;
+  height: 16px;
   padding: 0px 4px 0px 4px;
 }
 
@@ -166,37 +49,119 @@
   justify-content: flex-end;
   color: black;
   margin: 3px;
+  padding-top: 2px;
   align-items: center;
 }
 
-.window-btn{
+.minimise-btn{
   background-color: var(--taskbar-gray);
-  height: 18px;
-  width: 18px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 16px;
+  height: 18px;
+  width: 18px;
+  padding-right: 1.5px;
+  padding-bottom: 2px;
+  box-shadow: inset -1px -1px 0px 1px black, inset 1px 1px 0px white;
+}
+
+.resize-btn{
+  background-color: var(--taskbar-gray);
+  padding: 1px 2px 0px 0px;
+  height: 18px;
+  width: 18px;
   margin-left: 2px;
-  line-height: 1;
-  padding: 0;
-  border: 1px solid black;
-  border-top-color: #c6c6c6;
-  border-left-color: #c6c6c6;
-  box-shadow: inset 1px 1px #fff,1px 1px #000d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset -1.5px -1.5px 0px 1px black, inset 1px 1px 0px white;
 }
 
-.minimise-btn {
-  position: relative;
-  align-items: flex-start;
+.close-btn{
+  background-color: var(--taskbar-gray);
   font-size: 20px;
+  margin-left: 2px;
+  display: flex;
+  padding: 0px 2px 3px 0px;
+  justify-content: center;
+  align-items: center;
+  height: 18px;
+  width: 18px;
+  box-shadow: inset -1.5px -1.5px 0px 1px black, inset 1px 1px 0px white;
 }
 
-.resize-btn {
-  font-size: 14px;
+/* About Me */
+
+.biography-window{
+  box-shadow: inset -2px -2px black;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.biography-pic-1 {
+  width: 210px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.biography-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.biography-picture-container {
+  flex-shrink: 0;
+  width: 210px;
+}
+
+.biography-content-right {
+  flex: 1;
+  min-width: 0;
+  overflow-y: auto;
+}
+
+.biography-title {
+  font-family: 'Win95';
+  padding-left: 10px;
+  padding-top: 3px;
+  font-size: 32px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.biography-line1 {
+  font-size: 13px;
+  color: rgb(93, 93, 93);
+  padding-left: 10px;
+}
+
+.biography-line2 {
+  font-size: 13px;
+  color: rgb(93, 93, 93);
+  padding-left: 7px;
+  padding-top: 6px;
+}
+
+.biography-line3 {
+  font-size: 13px;
+  color: rgb(93, 93, 93);
+  padding-left: 7px;
+  padding-right: 12px;
+}
+
+.programming-buttons{
+  gap: 6px;
+  display: flex;
+  padding-top: 7px;
+  padding-left: 11px;
+  flex-wrap: wrap;
+  max-width: 100%;
   align-items: center;
 }
 
-.close-btn {
-  font-size: 22px;
+.programming-buttons img{
+  object-fit: contain;
+  flex-shrink: 0;
+  height: 18px;
 }

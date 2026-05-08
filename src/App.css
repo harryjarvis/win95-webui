@@ -95,10 +95,9 @@
   box-shadow: -1px -1px black, 1px 1px white;
 }
 
-.clock img {
+.right-task-icon {
   height: 18px;
   width: auto;
-  padding-right: 2px;
 }
 
 /* calendar styling */
@@ -205,9 +204,9 @@
 }
 
 .start-menu-left img{
-  width: 22px;
-  height: auto;
-  margin-bottom: 8px;
+    width: 22px;
+    height: auto;
+    margin-bottom: 8px;
 }
 
 .start-menu-right{
@@ -297,7 +296,7 @@ width: 82px;
 }
 
 /* selected icons */
-.selected-icon {
+.desktop-icon-selected {
   outline: 1px dotted white;
   background-color: var(--hover-blue);
   border-radius: 4px;
